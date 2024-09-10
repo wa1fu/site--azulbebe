@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="conteudo-artigo">
+    <h1></h1>
+    
+    <p></p>
+
+    <h2>1. Binary Cross-Entropy Loss: </h2>
+    <p>Binary Cross-Entropy Loss é uma função de perda utilizada em modelos de classificação binária, onde o objetivo é prever se um dado pertence a uma das duas classes possíveis (por exemplo, "spam" ou "não spam").
+
+        Como funciona?
+        
+        Imagine que você tem um modelo que prevê a probabilidade de um email ser spam. Essa probabilidade é um número entre 0 e 1.
+        
+        Se o modelo prevê 0.9, ele está confiante de que o email é spam.
+        Se o modelo prevê 0.1, ele está confiante de que o email não é spam.
+        A Binary Cross-Entropy Loss mede a diferença entre a previsão do modelo e o valor real (se o email realmente é spam ou não).
+        
+        A fórmula é:
+        
+        Loss = - (y * log(p) + (1 - y) * log(1 - p))
+        Onde:
+        
+        y é o valor real (0 para não spam, 1 para spam)
+        p é a probabilidade prevista pelo modelo
+        Quanto menor a perda, melhor o desempenho do modelo!
+        
+        Em resumo:
+        
+        Binary Cross-Entropy Loss é uma função de perda para modelos de classificação binária.
+        Mede a diferença entre a previsão do modelo e o valor real.
+        Quanto menor a perda, melhor o desempenho do modelo.
+        Espero que isso tenha ajudado!
+        
+        Se você tiver mais alguma dúvida, me pergunte!</p>
+
+    <p></p>
+
+    <h2>2.Parâmetros e hiperparâmetros</h2>
+    <p>Em resumo, parâmetros são valores que o modelo de machine learning aprende durante o treinamento. Eles são ajustados com base nos dados de treinamento para que o modelo possa fazer previsões precisas.
+
+        Já os hiperparâmetros são configurações que você define antes do treinamento do modelo. Eles controlam o processo de aprendizado e influenciam como o modelo aprende.
+        
+        Alguns exemplos de hiperparâmetros são:
+        
+        Taxa de aprendizado: determina o quão rápido o modelo aprende.
+        Número de camadas ocultas: define a complexidade do modelo.
+        Função de ativação: determina como os neurônios no modelo processam informações.
+        Você pode pensar nos hiperparâmetros como as "alavancas" que você ajusta para controlar o processo de treinamento, enquanto os parâmetros são os "ingredientes" que o modelo aprende a usar para fazer previsões.
+        
+        Espero que isso tenha ajudado a esclarecer a diferença entre parâmetros e hiperparâmetros!
+        
+        Se você tiver mais alguma dúvida, me pergunte!</p>
+
+    <h2>3.Busca em Grade (Grid Search) </h2>
+    <p>A Busca em Grade (Grid Search) é uma técnica de otimização de hiperparâmetros muito utilizada em Machine Learning. Ela funciona testando todas as combinações possíveis de valores para os hiperparâmetros dentro de um intervalo pré-definido.
+
+        Imagine que você tem um modelo de Machine Learning com dois hiperparâmetros: a taxa de aprendizado e o número de camadas ocultas. Você quer encontrar a melhor combinação desses hiperparâmetros para o seu modelo.
+        
+        Com a Busca em Grade, você define um intervalo de valores para cada hiperparâmetro. Por exemplo, para a taxa de aprendizado, você pode definir um intervalo de 0.01 a 0.1, com passos de 0.01. Para o número de camadas ocultas, você pode definir um intervalo de 1 a 5.
+        
+        A Busca em Grade irá então testar todas as combinações possíveis dentro desses intervalos. Por exemplo, ela irá testar o modelo com a taxa de aprendizado de 0.01 e 1 camada oculta, depois com 0.01 e 2 camadas ocultas, e assim por diante, até testar todas as combinações.
+        
+        Após testar todas as combinações, a Busca em Grade irá escolher a combinação de hiperparâmetros que resultou no melhor desempenho do modelo.
+        
+        Vantagens da Busca em Grade:
+        
+        É uma técnica simples e fácil de implementar.
+        Garante que todas as combinações possíveis de hiperparâmetros sejam testadas.
+        Desvantagens da Busca em Grade:
+        
+        Pode ser muito lenta para modelos com muitos hiperparâmetros.
+        Pode não encontrar a melhor combinação de hiperparâmetros se o intervalo definido não incluir a melhor combinação.
+        Espero que isso tenha ajudado a entender o que é a Busca em Grade!</p>
+
+    <p></p>
+
+    <h2>4.Avaliação e Métricas de Avaliação para IA Generativa</h2>
+    <p>A avaliação de modelos de IA Generativa é um campo em constante evolução, e ainda não existem protocolos padrão e métricas estabelecidas para avaliar o desempenho desses modelos.
+
+        No entanto, existem algumas abordagens e métricas que estão sendo utilizadas para avaliar a qualidade da saída gerada por IA Generativa:
+        
+        Métricas Assistidas por IA: Utilizam modelos de linguagem como o GPT-4 para avaliar a saída gerada por IA, especialmente em situações em que a avaliação humana é difícil ou demorada.
+        Métricas Baseadas em Computação: Utilizam algoritmos para comparar a saída gerada com um conjunto de dados de referência, avaliando a qualidade da saída em termos de coerência, fluidez e relevância.
+        Avaliação Humana: Envolve a avaliação da saída gerada por humanos, utilizando critérios como qualidade, criatividade e originalidade.
+        Existem também algumas plataformas e ferramentas que oferecem recursos para avaliar modelos de IA Generativa, como o Azure AI Studio e o Generative AI on Vertex AI. Essas plataformas permitem a geração de avaliações automáticas assistidas por IA e a visualização dos resultados.
+        
+        Espero que esta informação tenha sido útil!</p>
+
+    <p></p>
+
+    <h2>5. BLEU e ROUGE</h2>
+    <p>BLEU e ROUGE são métricas usadas para avaliar a qualidade de textos gerados por modelos de linguagem. 
+
+        * *BLEU (Bilingual Evaluation Understudy)* mede a precisão da tradução, comparando a tradução gerada com uma tradução de referência. 
+        * *ROUGE (Recall-Oriented Understudy for Gisting Evaluation)* mede a capacidade do modelo de resumir um texto, comparando o resumo gerado com um resumo de referência. 
+        
+        Ambas as métricas são amplamente utilizadas na pesquisa de processamento de linguagem natural (PNL) para avaliar o desempenho de modelos de tradução automática e resumo de texto.
+        </p>
+</div>
+
+
+<a href="../index.html">voltar a página inicial</a>
+</body>
+</html>

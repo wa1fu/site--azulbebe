@@ -1,0 +1,59 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.6;
+   color: #0e0b0b;
+   max-width: 1000px; 
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #8599f379;
+}
+
+h1,h2{
+   color: #0b1d5876;
+   text-align: center;
+   background-color:#3549b070;
+   border-radius: 15px;
+}
+
+.lista-tópico{
+   background-color: #12307d;
+   border-radius: 15px;
+   padding: 20px;
+   margin-bottom: 30px;
+}
+
+.lista-tópico:hover{
+   transform: translateY(-2px);
+}
+ul{
+   list-style-type: none;
+   padding-left: 0;   
+}
+Li{
+   margin-bottom: 15px;
+   padding-left: 30px;
+}
+
+a{
+   color: #142143cc;
+   text-decoration: none; /*isto tira o sublinhado da linha*/
+}
+
+.imagem-topico{
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+/*Estilo das Páginas*/
+
+.conteudo-artigo{
+   background-color: #556de828;
+   border-radius: 10px;
+   padding: 30px;
+}
+ 
+ 
+ 
